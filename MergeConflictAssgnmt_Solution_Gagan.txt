@@ -1,0 +1,69 @@
+
+Assignment GIT MERGE CONFLICT:
+
+OUTPUT of HISTORY Command & the Graphical Output of Ultimate Resolution of Merge Conflicts
+
+  355  cd sample-project/
+  356  ls
+  357  git init
+  358  ls
+  359  ls -la
+  360  git add .
+  361  git commit -m "integrationProj"
+  362  git branch -M main
+  363  git branch
+  364  git remote add origin https://github.com/Gs2309/Git_MergeConflict_Assgnmt2.git
+  365  git push origin main
+  366  git log --oneline
+  367  git commit --amend -m "MergeConflict"
+  368  git log --oneline
+  369  git push --force
+  370  git push --set-upstream origin main
+  371  git push origin main
+  372  git push --force origin main
+  373  git log --oneline
+  374  ls
+  375  head
+  376  clear
+  377  git branch
+  378  git branch --merged
+  379  git branch dev1
+  380  git branch dev2
+  381  git checkout dev1
+  382  vim index.html
+  383  git status
+  384  git add .
+  385  git commit -m "Web_App"
+  386  git push origin dev1
+  387  git checkout dev2
+  388  vim index.html
+  389  git add
+  390  git add .
+  391  git commit -m "HTML_based"
+  392  git push origin dev2
+  393  dev checkout
+  394  git checkout
+  395  git checkout main
+  396  git status
+  397  git merge dev1
+  398  git log --oneline
+  399  git merge dev2
+  400  git config --global merge.tool kdiff3
+  401  git mergetool
+  402  git commit -a -m "resolved merge conflict"
+  403  git merge dev2
+  404  git branch --merged
+  405  history
+
+hp@HP-PAVILLION-15 MINGW64 ~/Downloads/Git_Assgnmts/Assgnmt 2/sample-project (main)
+$ git log --oneline --decorate --graph --all
+*   e9b3bbd (HEAD -> main) resolved merge conflict
+|\
+| * 5475a3c (origin/dev2, dev2) HTML_based
+* | b70938a (origin/dev1, dev1) Web_App
+|/
+* 933fd51 (origin/main) MergeConflict
+
+hp@HP-PAVILLION-15 MINGW64 ~/Downloads/Git_Assgnmts/Assgnmt 2/sample-project (main) $
+
+
